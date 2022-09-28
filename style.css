@@ -47,11 +47,17 @@ body {
     background-size: 700px;
 }
 
+body div {
+    margin: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
 header {
     color: wheat;
     background-image: url(Otros/v1020-27b.jp);
     background-repeat: no-repeat;
-    margin-bottom: 170px;
+    margin-bottom: 100px;
 
 }
 
@@ -82,6 +88,27 @@ header img {
     top: 60px;
 }
 
+header div {
+    position: relative;
+    top: 40px;
+}
+
+#verMas {
+    position: relative;
+    top: -300px;
+    left: 1200px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+}
+
+#verMas:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
 .Inicio {
     position: relative;
     left: -150px;
@@ -89,70 +116,115 @@ header img {
 }
 
 .AboutMe {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "info estudio SobreMi"
+        "lenguajes estudio SobreMi"
+        "skills idiomas SobreMi";
+    padding: 60px;
+    text-align: center;
+
+}
+
+
+.SobreMi {
+    grid-area: SobreMi;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 90px;
+}
+
+.info {
+    grid-area: info;
     backdrop-filter: brightness(60%);
-    color: wheat;
+    border-top-left-radius: 15px;
+    padding: 20px;
+}
+
+.info ul {
+    text-align: left;
+}
+
+
+
+.idiomas {
+    grid-area: idiomas;
+    backdrop-filter: brightness(60%);
+    border-bottom-right-radius: 15px;
     padding: 30px;
-    max-height: 800px;
-    border: 0px;
 }
 
-.AboutMe img {
-    position: relative;
-    left: 830px;
-    top: 120px;
+.estudio {
+    grid-area: estudio;
+    backdrop-filter: brightness(60%);
+    border-top-right-radius: 15px;
+    padding-right: 50px;
+    padding-top: 20px;
+    text-align: center;
 }
 
-.AboutMe h1 {
-    color: wheat;
-    position: relative;
-    font-size: 40px;
-    left: 880px;
-    top: 150px;
+
+
+.estudio dt {
+    margin-bottom: 10px;
 }
 
-.AboutMe .info {
-    position: relative;
-    top: -300px;
+.lenguajes {
+    grid-area: lenguajes;
+    backdrop-filter: brightness(60%);
+    padding: 20px;
 }
 
-.AboutMe .estudio {
-    position: relative;
-    top: -450px;
-    left: 400px;
-    max-width: 300px;
+.lenguajes ul {
+    text-align: left;
 }
 
-.AboutMe .lenguajes {
-    position: relative;
-    top: -670px;
+.skills {
+    grid-area: skills;
+    backdrop-filter: brightness(60%);
+    border-bottom-left-radius: 15px;
+    padding: 20px;
 }
 
-.AboutMe .skills {
-    position: relative;
-    top: -670px;
-    max-width: 300px;
-}
-
-.AboutMe .idiomas {
-    position: relative;
-    max-width: 280px;
-    top: -785px;
-    left: 400px;
+.skills ul {
+    text-align: left;
 }
 
 .Services {
-    border: 0px;
-    padding-top: 60px;
+    padding: 70px;
     background-image: url(Otros/v1020-22b.jpg);
-    height: 600px;
+    height: auto;
+    margin-right: -10px;
+    margin-left: -10px;
+}
 
+.Services div {
+    border-radius: 15px;
+    backdrop-filter: brightness(60%);
+    padding: 30px;
+    transition-duration: .5s;
+}
 
-
+.Services div:hover {
+    transform: scale(1.2, 1.2);
+    transition-duration: .5s;
 }
 
 .Services h2 {
     text-align: center;
     font-size: 50px;
+}
+
+.Services h3 {
+    font-size: 30px;
+}
+
+.Services div p {
+    font-weight: bold;
 }
 
 .Services article {
@@ -161,26 +233,28 @@ header img {
     margin-left: 100px;
     margin-right: 100px;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 80px;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
 }
 
 .Clients {
     padding: 80px;
-    max-height: 900px;
+    max-height: auto;
     backdrop-filter: brightness(60%);
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .Clients article div {
     margin: 30px;
+    text-align: center;
 }
 
 .Clients article {
     display: flex;
     flex-wrap: wrap;
-
-
+    justify-content: center;
 }
 
 .Clients h2 {
@@ -208,37 +282,74 @@ header img {
     cursor: pointer;
 }
 
+.Contact2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "title title title"
+        "map form icons";
+    padding-bottom: 60px;
+    text-align: center;
+    padding-left: 90px;
+}
+
+.title {
+    grid-area: title;
+    padding: 80px;
+}
+
+.map {
+    grid-area: map;
+    border-radius: 15px;
+    padding: 30px;
+    padding-left: -10px;
+    padding-right: -10px;
+    backdrop-filter: brightness(60%);
+
+}
+
+.map iframe {
+    border: 10px;
+    border: 10px;
+}
+
+.form {
+    grid-area: form;
+}
+
+.Icons {
+    grid-area: icons;
+    z-index: 1;
+}
+
 .Contact {
-    padding: 120px;
+    padding: 40px;
     background-image: url(Otros/v1020-28b.jpg);
+    max-height: auto;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+#blob2 {
+    position: absolute;
+    rotate: 270deg;
+    left: 35%;
+    top: 3192px;
 }
 
 .Contact h2 {
     font-size: 40px;
-}
-
-.Contact {
-    display: flex;
-}
-
-.Contact iframe {
-    position: relative;
-    top: -170px;
-    left: 40px;
+    text-align: center;
 }
 
 .Contact form {
     font-size: 20px;
     font-family: 'Gsans' sans-serif;
     color: wheat;
-    position: relative;
     top: 150px;
     left: 500px;
-}
-
-.Contact input {
-    border-width: 2px;
-    border-color: wheat;
 }
 
 .Contact textarea {
@@ -247,14 +358,18 @@ header img {
 }
 
 .Contact #icons span {
-    position: relative;
-    left: 400px;
-    display: flex padding-top
+    padding: 20px;
+    display: flex;
+    font-weight: bold;
+}
+
+#icons span img {
+    margin-right: 12px;
 }
 
 footer {
     font-size: 12px;
-    padding-top: 30px;
+    padding-top: 40px;
     height: 100px;
     display: grid;
     grid-gap: 2px;
@@ -262,6 +377,9 @@ footer {
     grid-auto-columns: 1fr;
     text-align: center;
     background-color: rgb(29, 31, 48);
+    margin: -10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 footer a {
