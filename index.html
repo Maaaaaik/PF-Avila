@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="UTF-8">
+    <meta name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mikel Project</title>
 </head>
 <!--inicio de primer seccion-->
 
 <body>
-    <header class="Inicio">
+    <header class="Inicio p-2 m-5">
         <img id="blob" src="Otros/BlobHeader.png">
-        <div>
-            <h1>Hola, soy Mikel Avila</h1>
-            <img id="mike" src="Otros/Mikel.jpg" alt="Mikel">
-            <h2>Desarrollador web Full Stack</h2>
-            <p>Desarrollador de softare con experiencia en diseño, ejecucion y mantenimiento de paginas web. Dominio de
-                varias plataformas, lenguajes y herramientas, asegurandote loas resultados mas vanguardistas.</p>
-            <img id="verMas" src="Otros/VerMas.png">
+        <div class="d-flex p-2 w-100">
+            <div class="row">
+                <div class="img d-flex col-lg-4 align-items-center justify-content-center">
+                    <img id="mike" src="Otros/Mikel.jpg" alt="Mikel">
+                </div>
+                <div class="h1 col-lg-4 p-1 align-items-center justify-content-center ">
+                    <h1>Hola, soy Mikel Avila</h1>
+                    <h2>Desarrollador web Full Stack</h2>
+                    <p>Desarrollador de softare con experiencia en diseño, ejecucion y mantenimiento de paginas web.
+                        Dominio
+                        de
+                        varias plataformas, lenguajes y herramientas, asegurandote loas resultados mas vanguardistas.
+                    </p>
+                </div>
+                <div class="img2 col-lg-4 col-xs-6 d-flex align-items-center justify-content-center">
+                    <img class="" id="verMas" src="Otros/VerMas.png">
+                </div>
+            </div>
         </div>
     </header>
 
     <!--inicio de la segunda seccion-->
-    <section class="AboutMe">
+    <div class="AboutMe m-5">
         <div class="SobreMi">
             <h1>Sobre mi</h1>
             <img id="Ilustra" src="Otros/SobreMi.png" alt="ilustracion">
@@ -83,9 +98,9 @@
                 <li>Perseverancia</li>
             </ul>
         </div>
-    </section>
+    </div>
     <!--Inicio de la tercer seccion-->
-    <section class="Services">
+    <div class="Services">
         <h2>Servicios</h2>
         <article>
             <div>
@@ -110,116 +125,119 @@
                     este estable, actualizada y se adapte sin problemas a tus nuevas necesidades.</p>
             </div>
         </article>
-    </section>
+    </div>
     <!--inicio de la cuarta seccion-->
-    <section class="Clients">
+    <div class="Clients">
         <h2>Nuestros Clientes</h2>
-        <div class="Contenedor">
-            <div id="card">
-                <img src="Otros/CaafeLogo.png" alt="">
-                <div id="content">
-                    Caafe Skateshop
-                    <p> </p>
-                    <div id="visitar">
-                        <button> Visitar </button>
+        <div class="row d-flex justify-content-center">
+            <div class="col m-3 align-items-center justify-content-center ">
+                <div id="card" class="card text-center h-100 text-bg-dark" style="width: 18rem;">
+                    <img src="Otros/CaafeLogo.png" class="card-img-bottom p-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Caafe Skateshop</h5>
+                        <p class="card-text"></p>
+                        <a target="_blank" href="https://www.caafeskateshop.com.ar/" class="btn btn-light">Visitar</a>
                     </div>
                 </div>
             </div>
-
-            <div id="card">
-                <img src="Otros/logoprocomex.png" alt="">
-                <div id="content">
-                    Procomex
-                    <p> </p>
-                    <div id="visitar">
-                        <button> Visitar </button>
+            <div class="col m-3 col-lg-4 align-items-center justify-content-center">
+                <div id="card" class="card text-center h-100 text-bg-dark" style="width: 18rem;">
+                    <img src="Otros/logoprocomex.png" class="card-img-top p-4 mt-5" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Procomex</h5>
+                        <p class="card-text"></p>
+                        <a target="_blank" href="http://www.procomex.com.ar/" class="btn btn-light">Visitar</a>
                     </div>
                 </div>
             </div>
-
-            <div id="card">
-                <img src="Otros/Textillogo (2).png" alt="">
-                <div id="content">
-                    Coats
-                    <p> </p>
-                    <div id="visitar">
-                        <button> Visitar </button>
+            <div class="col m-3 align-items-center justify-content-center">
+                <div id="card" class="card text-center h-100 text-bg-dark" style="width: 18rem;">
+                    <img src="Otros/FeltonLogo.png" class="card-img-top p-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Felton</h5>
+                        <p class="card-text"></p>
+                        <a target="_blank" href="https://feltonbebidas.com.ar/" class="btn btn-light">Visitar</a>
                     </div>
                 </div>
             </div>
-            <div id="card">
-                <img style="max-width: 300px; margin-left: 30px;" src="Otros/FeltonLogo.png" alt="">
-                <div id="content">
-                    Felton
-                    <p> </p>
-                    <div id="visitar">
-                        <button> Visitar </button>
+            <div class="row justify-content-around">
+                <div class="col m-3 align-items-center justify-content-center">
+                    <div id="card" class="card text-center text-bg-dark h-100 " style="width: 18rem;">
+                        <img src="Otros/Textillogo (2).png" class="card-img-top p-4 w-30 align-self-center" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Coats Textiles</h5>
+                            <p class="card-text"></p>
+                            <a target="_blank" href="https://coats.com/es" class="btn btn-light">Visitar</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="card">
-                <img src="Otros/Modernlogo.png" alt="">
-                <div id="content">
-                    Modern Rebel Barbershop
-                    <p> </p>
-                    <div id="visitar">
-                        <button> Visitar </button>
+                <div class="col m-3 align-items-center justify-content-center">
+                    <div id="card" class="card text-center text-bg-dark h-100 " style="width: 18rem;">
+                        <img src="Otros/Modernlogo.png" class="card-img-top p-3 " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Modern</h5>
+                            <p class="card-text"></p>
+                            <a target="_blank" href="https://modernrebelbarbershop.com/"
+                                class="btn btn-light">Visitar</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--inicio de la quinta seccion-->
-    <section class="Contact">
-        <div class="Contact2">
-            <div class="title">
-                <h2>Contactame</h2>
-            </div>
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.5067570822152!2d-57.93714538489047!3d-34.91882568174558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e6194af2f905%3A0x601b4566ebb2d1cf!2sC.%203%201456%2C%20B1904CHD%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1662483702858!5m2!1ses-419!2sar"
-                    width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            <div class="form">
-                <form action="https://formspree.io/f/xvoyzrbl" method="POST">
-                    <p>Nombre:</p>
-                    <input type="field" name="Nombre">
-                    <br>
-                    <p>Email:</p>
-                    <input type="email" name="email"><br>
-                    <p>Deja un mensaje:</p>
-                    <textarea name="message"></textarea><br>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-            <div class="Icons"><img id="blob2" src="Otros/BlobHeader.png">
-                <span><img src="Otros/instagram.png" alt="">
-                    <p>Instagram</p>
-                </span>
-                <span><img src="Otros/linkedin.png" alt="">
-                    <p>LinkedIn</p>
-                </span>
-                <span><img src="Otros/twitter.png" alt="">
-                    <p>Twitter</p>
-                </span>
-                <span><img src="Otros/github.png" alt="">
-                    <p>GitHub</p>
-                </span>
+        <!--inicio de la quinta seccion-->
+        <div class="Contact">
+            <div class="Contact2">
+                <div class="title">
+                    <h2>Contactame</h2>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.5067570822152!2d-57.93714538489047!3d-34.91882568174558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e6194af2f905%3A0x601b4566ebb2d1cf!2sC.%203%201456%2C%20B1904CHD%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1662483702858!5m2!1ses-419!2sar"
+                        width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="form">
+                    <form action="https://formspree.io/f/xvoyzrbl" method="POST">
+                        <p>Nombre:</p>
+                        <input type="field" name="Nombre">
+                        <br>
+                        <p>Email:</p>
+                        <input type="email" name="email"><br>
+                        <p>Deja un mensaje:</p>
+                        <textarea name="message"></textarea><br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="Icons">
+
+                    <span><a target="_blank" href="https://www.instagram.com/mikkel.avila/"><img
+                                src="Otros/instagram.png" alt=""></a>
+                        <p>Instagram</p>
+                    </span>
+                    <span><a target="_blank" href="#"><img src="Otros/linkedin.png" alt=""></a>
+                        <p>LinkedIn</p>
+                    </span>
+                    <span><a target="_blank" href="https://twitter.com/mikkelavila"><img src="Otros/twitter.png"
+                                alt=""></a>
+                        <p>Twitter</p>
+                    </span>
+                    <span><a target="_blank" href="https://github.com/Maaaaaik"><img src="Otros/github.png" alt=""></a>
+                        <p>GitHub</p>
+                    </span>
+                </div>
             </div>
         </div>
-    </section>
-    <footer>
-        <p>Copyright © 2022 Mikel Project. Todos los derechos reservados.</p>
-        <br>
-        <p><a href="" style="text-decoration:none">Dirección General de Defensa y Protección al Consumidor</a></p>
-        <br>
-        <p><a href="" style="text-decoration:none">Política de privacidad</a></p>
-        <br>
-        <p>Defensa de las y los Consumidores. Para reclamos <a href="" id="1" style="text-decoration:none;">ingrese
-                aquí</a></p>
-    </footer>
+        <footer>
+            <p>Copyright © 2022 Mikel Project. Todos los derechos reservados.</p>
+            <br>
+            <p><a href="" style="text-decoration:none">Dirección General de Defensa y Protección al Consumidor</a></p>
+            <br>
+            <p><a href="" style="text-decoration:none">Política de privacidad</a></p>
+            <br>
+            <p>Defensa de las y los Consumidores. Para reclamos <a href="" id="1" style="text-decoration:none;">ingrese
+                    aquí</a></p>
+        </footer>
 </body>
 
 </html>

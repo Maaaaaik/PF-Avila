@@ -24,19 +24,21 @@
     border-radius: 50%;
 }
 
-#fondo {
-    max-width: 200px;
-}
-
 #blob {
     position: absolute;
-    left: 140px;
-    top: -30px
+    left: 0px;
+    top: -50px
 }
 
-html body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x;
+    : hidden
 }
 
 body {
@@ -47,56 +49,35 @@ body {
     background-size: 700px;
 }
 
-body div {
-    margin: 0px;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
 header {
-    color: wheat;
-    background-image: url(Otros/v1020-27b.jp);
-    background-repeat: no-repeat;
-    margin-bottom: 100px;
-
+    margin: 100px;
 }
 
-header h1 {
-    position: relative;
-    top: 200px;
-    left: 556px;
+.img {
+    margin-top: 90px;
     z-index: 100;
 }
 
-header h2 {
-    position: relative;
-    top: -140px;
-    left: 550px;
-}
-
-header p {
-    position: relative;
+.h1 {
+    padding: 50px;
+    margin-top: 80px;
     text-align: center;
-    top: -140px;
-    left: 510px;
-    max-width: 400px;
+    z-index: 100;
 }
 
-header img {
-    position: relative;
-    left: 170px;
-    top: 60px;
+.h1 h1 {
+    font-weight: bold;
 }
 
-header div {
-    position: relative;
-    top: 40px;
+.h1 p {
+    font-size: medium;
+}
+
+.img2 {
+    z-index: 100;
 }
 
 #verMas {
-    position: relative;
-    top: -300px;
-    left: 1200px;
     transition-duration: .5s;
 
 }
@@ -106,17 +87,12 @@ header div {
     transition-duration: .5s;
 }
 
-.Inicio {
-    position: relative;
-    left: -150px;
-
-}
 
 .AboutMe {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 20px;
+    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
         "info estudio SobreMi"
@@ -124,10 +100,12 @@ header div {
         "skills idiomas SobreMi";
     padding: 60px;
     text-align: center;
+    position: relative;
 }
 
 .SobreMi {
     grid-area: SobreMi;
+    font-size: 40px;
     text-align: center;
     margin-left: 50px;
     margin-top: 90px;
@@ -233,139 +211,20 @@ header div {
     grid-auto-columns: 1fr;
 }
 
-.Clients div {
-    margin: 10px;
-}
-
 .Clients h2 {
-    position: relative;
-    left: 100px;
-}
-
-.Contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+    padding: 60px;
 }
 
 #card {
-    background: rgba(255, 255, 255, 0.164);
-    width: 350px;
-
-    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    transition: 0.3s
+    transition-duration: .5s;
 }
 
 #card:hover {
-    transition: 0.3s;
-    box-shadow: 8px 8px 16px 0px hsla(0, 0%, 100%, 0.623), -8px -8px 16px 0 hsla(0, 0%, 100%, 0.541);
-}
-
-#card img {
-    object-fit: scale-down;
-    animation: fadeIn 1s;
-    height: 95%;
-    width: 95%;
-    border-radius: 20px 20px 0px 0px;
-    transition: 0.3s;
-    border: 20px;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-
-#content {
-    padding: 2vh 1vw 2vh 2vw;
-    font-size: 1.3rem;
-    font-family: sans-serif;
-    color: hsl(39, 77%, 83%);
-    text-align: center;
-}
-
-
-
-#content p {
-    display: block;
-    width: auto;
-}
-
-
-#visitar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#visitar button {
-    margin: 2vw 1vw 2vw 2vh;
-    height: 40px;
-    width: 80px;
-    font-size: 2.8vh;
-    font-family: sans-serif;
-    font-weight: Regular;
-    background-color: #a5460f;
-    border: none;
-    outline: none;
-    color: white;
-    border-radius: 10px;
-    transition: 0.3s
-}
-
-#visitar button:active {
-    background-color: white;
-    color: #345e82
-}
-
-#visitar button:hover {
-    transition: 0.3s;
-    margin-left: 2vw;
-    margin-right: 2vw;
     transform: scale(1.2, 1.2);
-    cursor: pointer
-}
 
-.Clients {
-    padding: 80px;
-    max-height: auto;
-    backdrop-filter: brightness(60%);
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-.Clients article div {
-    margin: 30px;
-    text-align: center;
-}
-
-.Clients article {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.Clients h2 {
-    padding-bottom: 80px;
-    font-size: 40px;
-}
-
-.Clients div img {
-    border: 2px solid wheat;
-    border-radius: 2%;
-    max-height: 160px;
-}
-
-.boton {
-    background-color: #2c8d30;
-    border: none;
-    border-radius: 3px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
 }
 
 .Contact2 {
@@ -422,8 +281,9 @@ header div {
     position: absolute;
     rotate: 270deg;
     left: 35%;
-    top: 3192px;
+    top: 3245px;
 }
+
 
 .Contact h2 {
     font-size: 40px;
@@ -451,6 +311,7 @@ header div {
 
 #icons span img {
     margin-right: 12px;
+    z-index: 100;
 }
 
 footer {
@@ -471,3 +332,40 @@ footer {
 footer a {
     color: wheat;
 }
+
+@media (max-width: 700px) {
+    .Services article {
+        text-align: center;
+        padding: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        display: grid;
+        grid-gap: 80px;
+        grid-auto-flow: row;
+        grid-auto-columns: 1fr;
+    }
+
+    .Contact2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "title title"
+            "form icons";
+        padding-bottom: 60px;
+        text-align: center;
+        padding-left: 90px;
+    }
+
+    .Contact h2 {
+        padding: 20px;
+    }
+
+    .title {
+        padding 20px
+    }
+
+    .map {
+        display: none;
+    }
