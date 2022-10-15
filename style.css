@@ -20,14 +20,15 @@
 }
 
 #Ilustra {
-    max-width: 300px;
+    max-width: 200px;
     border-radius: 50%;
 }
 
 #blob {
     position: absolute;
     left: 0px;
-    top: -50px
+    top: -50px;
+    display: none;
 }
 
 html {
@@ -37,8 +38,7 @@ html {
 html,
 body {
     height: 100%;
-    overflow-x;
-    : hidden
+
 }
 
 body {
@@ -50,7 +50,8 @@ body {
 }
 
 header {
-    margin: 100px;
+    margin: 50px;
+    height: auto;
 }
 
 .img {
@@ -77,12 +78,12 @@ header {
     z-index: 100;
 }
 
-#verMas {
+.VerMas {
     transition-duration: .5s;
 
 }
 
-#verMas:hover {
+.VerMas:hover {
     transform: scale(1.2, 1.2);
     transition-duration: .5s;
 }
@@ -230,7 +231,7 @@ header {
 .Contact2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 1.5fr;
+    grid-template-rows: auto 1.5fr;
     gap: 0px 0px;
     grid-template-areas:
         "title title title"
@@ -242,7 +243,8 @@ header {
 
 .title {
     grid-area: title;
-    padding: 80px;
+    padding: 30px;
+    height: auto;
 }
 
 .map {
@@ -287,15 +289,16 @@ header {
 
 .Contact h2 {
     font-size: 40px;
+    font-weight: bolder;
+    color: rgb(46, 133, 89);
     text-align: center;
 }
 
-.Contact form {
+.Contact .form {
     font-size: 20px;
     font-family: 'Gsans' sans-serif;
     color: wheat;
-    top: 150px;
-    left: 500px;
+    justify-content: center;
 }
 
 .Contact textarea {
@@ -317,7 +320,7 @@ header {
 footer {
     font-size: 12px;
     padding-top: 40px;
-    height: 100px;
+    height: auto;
     display: grid;
     grid-gap: 2px;
     grid-auto-flow: column;
@@ -333,7 +336,100 @@ footer a {
     color: wheat;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) or (max-width: 340px) {
+    #blob {
+        display: none;
+    }
+
+    header {
+        height: 700px;
+    }
+
+    .img {
+        margin-top: 30px;
+        z-index: 100;
+    }
+
+    .AboutMe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "sobreMi sobreMi"
+            "info estudio"
+            "lenguajes estudio"
+            "skills idiomas";
+        padding: 60px;
+        text-align: center;
+        position: relative;
+    }
+
+    .SobreMi {
+        grid-area: sobreMi;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .info {
+        grid-area: info;
+        backdrop-filter: brightness(60%);
+        border-top-left-radius: 15px;
+        padding: 20px;
+    }
+
+    .info ul {
+        text-align: left;
+    }
+
+
+
+    .idiomas {
+        grid-area: idiomas;
+        backdrop-filter: brightness(60%);
+        border-bottom-right-radius: 15px;
+        padding: 30px;
+    }
+
+    .estudio {
+        grid-area: estudio;
+        backdrop-filter: brightness(60%);
+        border-top-right-radius: 15px;
+        padding-right: 50px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+
+
+    .estudio dt {
+        margin-bottom: 10px;
+    }
+
+    .lenguajes {
+        grid-area: lenguajes;
+        backdrop-filter: brightness(60%);
+        padding: 20px;
+    }
+
+    .lenguajes ul {
+        text-align: left;
+    }
+
+    .skills {
+        grid-area: skills;
+        backdrop-filter: brightness(60%);
+        border-bottom-left-radius: 15px;
+        padding: 20px;
+    }
+
+    .skills ul {
+        text-align: left;
+    }
+
+
     .Services article {
         text-align: center;
         padding: 50px;
@@ -348,7 +444,7 @@ footer a {
     .Contact2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto 1fr;
         gap: 0px 0px;
         grid-template-areas:
             "title title"
@@ -360,12 +456,12 @@ footer a {
 
     .Contact h2 {
         padding: 20px;
-    }
-
-    .title {
-        padding 20px
+        margin: 30px;
     }
 
     .map {
         display: none;
     }
+
+
+}
