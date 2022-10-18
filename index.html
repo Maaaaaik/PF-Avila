@@ -21,10 +21,10 @@
     <header class="Inicio p-2">
         <div class="d-flex p-2 w-100">
             <div class="row">
-                <div class="img d-flex col-lg-4 align-items-center justify-content-center">
+                <div class="img d-flex col-lg-4 col-sm-12 align-items-center justify-content-center">
                     <img id="mike" src="Otros/Mikel.jpg" alt="Mikel">
                 </div>
-                <div class="h1 col-lg-4 p-1 align-items-center justify-content-center ">
+                <div class="h1 col-lg-4 col-sm-12 p-1 align-items-center justify-content-center ">
                     <h1>Hola, soy Mikel Avila</h1>
                     <h2>Desarrollador web Full Stack</h2>
                     <p>Desarrollador de softare con experiencia en diseño, ejecucion y mantenimiento de paginas web.
@@ -33,12 +33,23 @@
                         varias plataformas, lenguajes y herramientas, asegurandote loas resultados mas vanguardistas.
                     </p>
                 </div>
-                <div class="img2 col-lg-4 col-xs-6 d-flex align-items-center justify-content-center">
-                    <a href="#1"><img class="VerMas" src="Otros/SobreMiMenu.png"></a>
-                    <a href="#2"><img class="VerMas" src="Otros/ServiciosMenu.png"></a>
-                    <a href="#3"><img class="VerMas" src="Otros/ClientesMenu.png"></a>
-                    <a href="#4"><img class="VerMas" src="Otros/ContactoMenu.png"></a>
-
+                <div class="col-lg-4 col-sm-12 p-3 d-flex align-items-center justify-content-center">
+                    <div class="row pe-2">
+                        <div id="indice" class="col  d-flex justify-content-center">
+                            <a href="#1"><img class="VerMas" src="Otros/SobreMiMenu.png"></a>
+                        </div>
+                        <div id="indice" class="col  d-flex justify-content-center">
+                            <a href="#2"><img class="VerMas" src="Otros/ServiciosMenu.png"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="indice" class="col d-flex justify-content-center">
+                            <a href="#3"><img class="VerMas" src="Otros/ClientesMenu.png"></a>
+                        </div>
+                        <div id="indice" class="col d-flex justify-content-center">
+                            <a href="#4"><img class="VerMas" src="Otros/ContactoMenu.png"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -136,8 +147,8 @@
     <!--inicio de la cuarta seccion-->
     <div id="3" class="Clients">
         <h2>Nuestros Clientes</h2>
-        <div class="row d-flex justify-content-center">
-            <div class="col-5 m-3 align-items-center justify-content-center ">
+        <div class="row d-flex justify-content-around">
+            <div id="tarjeta" class="col-sm-12 col-xl-6  m-3  align-items-center justify-content-center ">
                 <div id="card" class="card text-center h-100 text-bg-dark" style="width: 18rem;">
                     <img src="Otros/CaafeLogo.png" class="card-img-bottom p-3" alt="Logo Caafe skateshop">
                     <div class="card-body">
@@ -147,7 +158,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 m-3 align-items-center justify-content-center">
+            <div id="tarjeta" class="col-sm-12 col-xl-6  m-3 align-items-center justify-content-center">
                 <div id="card" class="card text-center h-100 text-bg-dark" style="width: 18rem;">
                     <img src="Otros/logoprocomex.png" class="card-img-top p-4 mt-5" alt="Logo Procomex">
                     <div class="card-body">
@@ -158,8 +169,8 @@
                 </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-5 m-3 align-items-center justify-content-center">
+        <div class="row d-flex justify-content-around">
+            <div id="tarjeta" class="col-sm-12 col-xl-6  m-3 align-items-center justify-content-center">
                 <div id="card" class="card text-center text-bg-dark h-100 " style="width: 18rem;">
                     <img src="Otros/Textillogo (2).png" class="card-img-top p-4 w-30 align-self-center"
                         alt="Logo Coats">
@@ -170,7 +181,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 m-3 align-items-center justify-content-center">
+            <div id="tarjeta" class="col-xl-6 col-sm-12 m-3 align-items-center justify-content-center">
                 <div id="card" class="card text-center text-bg-dark h-100 " style="width: 18rem;">
                     <img src="Otros/Modernlogo.png" class="card-img-top p-3 " alt="Logo Modern">
                     <div class="card-body">
@@ -182,7 +193,7 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center">
-            <div class="col-12 m-3 align-items-center justify-content-center">
+            <div id="tarjeta" class="col-xl-12 col-sm-12 m-3 align-items-center justify-content-center">
                 <div id="card" class="card text-center h-100 text-bg-dark" style="width: 18rem;">
                     <img src="Otros/FeltonLogo.png" class="card-img-top p-4" alt="Logo Felton">
                     <div class="card-body">
@@ -221,22 +232,29 @@
                 </form>
             </div>
             <div class="Icons">
-
-                <span><a target="_blank" href="https://www.instagram.com/mikkel.avila/"><img src="Otros/instagram.png"
-                            alt="Instagram"></a>
-                    <p>Instagram</p>
-                </span>
-                <span><a target="_blank" href="#"><img src="Otros/linkedin.png" alt="LinkedIn"></a>
-                    <p>LinkedIn</p>
-                </span>
-                <span><a target="_blank" href="https://twitter.com/mikkelavila"><img src="Otros/twitter.png"
-                            alt="Twitter"></a>
-                    <p>Twitter</p>
-                </span>
-                <span><a target="_blank" href="https://github.com/Maaaaaik"><img src="Otros/github.png"
-                            alt="GitHub"></a>
-                    <p>GitHub</p>
-                </span>
+                <div>
+                    <span><a target="_blank" href="https://www.instagram.com/mikkel.avila/"><img
+                                src="Otros/instagram.png" alt="Instagram"></a>
+                        <p>Instagram</p>
+                    </span>
+                </div>
+                <div>
+                    <span><a target="_blank" href="#"><img src="Otros/linkedin.png" alt="LinkedIn"></a>
+                        <p>LinkedIn</p>
+                    </span>
+                </div>
+                <div>
+                    <span><a target="_blank" href="https://twitter.com/mikkelavila"><img src="Otros/twitter.png"
+                                alt="Twitter"></a>
+                        <p>Twitter</p>
+                    </span>
+                </div>
+                <div>
+                    <span><a target="_blank" href="https://github.com/Maaaaaik"><img src="Otros/github.png"
+                                alt="GitHub"></a>
+                        <p>GitHub</p>
+                    </span>
+                </div>
             </div>
         </div>
     </div>

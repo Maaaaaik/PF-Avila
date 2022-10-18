@@ -33,15 +33,11 @@
 
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
-html,
 body {
     height: 100%;
-
-}
-
-body {
     font-family: "Gsans", sans-serif;
     color: wheat;
     background-image: url(Otros/v1020-60.jpg);
@@ -64,14 +60,14 @@ header {
     margin-top: 80px;
     text-align: center;
     z-index: 100;
-}
 
-.h1 h1 {
-    font-weight: bold;
-}
+    h1 {
+        font-weight: bold;
+    }
 
-.h1 p {
-    font-size: medium;
+    p {
+        font-size: medium;
+    }
 }
 
 .img2 {
@@ -81,13 +77,11 @@ header {
 .VerMas {
     transition-duration: .5s;
 
+    &:hover {
+        transform: scale(1.2, 1.2);
+        transition-duration: .5s;
+    }
 }
-
-.VerMas:hover {
-    transform: scale(1.2, 1.2);
-    transition-duration: .5s;
-}
-
 
 .AboutMe {
     display: grid;
@@ -95,10 +89,7 @@ header {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas:
-        "info estudio SobreMi"
-        "lenguajes estudio SobreMi"
-        "skills idiomas SobreMi";
+    grid-template-areas: "info estudio SobreMi" "lenguajes estudio SobreMi" "skills idiomas SobreMi";
     padding: 60px;
     text-align: center;
     position: relative;
@@ -117,13 +108,11 @@ header {
     backdrop-filter: brightness(60%);
     border-top-left-radius: 15px;
     padding: 20px;
+
+    ul {
+        text-align: left;
+    }
 }
-
-.info ul {
-    text-align: left;
-}
-
-
 
 .idiomas {
     grid-area: idiomas;
@@ -139,22 +128,20 @@ header {
     padding-right: 50px;
     padding-top: 20px;
     text-align: center;
-}
 
-
-
-.estudio dt {
-    margin-bottom: 10px;
+    dt {
+        margin-bottom: 10px;
+    }
 }
 
 .lenguajes {
     grid-area: lenguajes;
     backdrop-filter: brightness(60%);
     padding: 20px;
-}
 
-.lenguajes ul {
-    text-align: left;
+    ul {
+        text-align: left;
+    }
 }
 
 .skills {
@@ -162,10 +149,10 @@ header {
     backdrop-filter: brightness(60%);
     border-bottom-left-radius: 15px;
     padding: 20px;
-}
 
-.skills ul {
-    text-align: left;
+    ul {
+        text-align: left;
+    }
 }
 
 .Services {
@@ -174,63 +161,64 @@ header {
     height: auto;
     margin-right: -10px;
     margin-left: -10px;
+
+    div {
+        border-radius: 15px;
+        backdrop-filter: brightness(60%);
+        padding: 30px;
+        transition-duration: .5s;
+
+        &:hover {
+            transform: scale(1.2, 1.2);
+            transition-duration: .5s;
+        }
+
+        p {
+            font-weight: bold;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    article {
+        text-align: center;
+        display: grid;
+        grid-gap: 80px;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
 }
 
-.Services div {
-    border-radius: 15px;
-    backdrop-filter: brightness(60%);
-    padding: 30px;
-    transition-duration: .5s;
-}
+.Clients {
+    h2 {
+        font-weight: bolder;
+        text-align: center;
+        font-size: 40px;
+        padding: 60px;
+    }
 
-.Services div:hover {
-    transform: scale(1.2, 1.2);
-    transition-duration: .5s;
-}
+    #tarjeta {
+        max-width: 280px;
+    }
 
-.Services h2 {
-    text-align: center;
-    font-size: 50px;
-}
-
-.Services h3 {
-    font-size: 30px;
-}
-
-.Services div p {
-    font-weight: bold;
-}
-
-.Services article {
-    text-align: center;
-    display: grid;
-    grid-gap: 80px;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-}
-
-.Clients h2 {
-    font-weight: bolder;
-    text-align: center;
-    font-size: 40px;
-    padding: 60px;
-}
-
-.Clients #tarjeta {
-    max-width: 280px;
-}
-
-.Clients #card {
-    margin: 0px;
+    #card {
+        margin: 0px;
+    }
 }
 
 #card {
     transition-duration: .5s;
-}
 
-#card:hover {
-    transform: scale(1.2, 1.2);
-
+    &:hover {
+        transform: scale(1.2, 1.2);
+    }
 }
 
 .Contact2 {
@@ -238,9 +226,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1.5fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "title title title"
-        "map form icons";
+    grid-template-areas: "title title title" "map form icons";
     padding-bottom: 60px;
     text-align: center;
     padding-left: 90px;
@@ -260,11 +246,10 @@ header {
     padding-right: -10px;
     backdrop-filter: brightness(60%);
 
-}
-
-.map iframe {
-    border: 10px;
-    border: 10px;
+    iframe {
+        border: 10px;
+        border: 10px;
+    }
 }
 
 .form {
@@ -282,6 +267,25 @@ header {
     max-height: auto;
     margin-right: -10px;
     margin-left: -10px;
+
+    h2 {
+        font-size: 40px;
+        font-weight: bolder;
+        color: rgb(46, 133, 89);
+        text-align: center;
+    }
+
+    .form {
+        font-size: 20px;
+        font-family: 'Gsans' sans-serif;
+        color: wheat;
+        justify-content: center;
+    }
+
+    textarea {
+        border-width: 2px;
+        border-color: wheat;
+    }
 }
 
 #blob2 {
@@ -290,27 +294,6 @@ header {
     left: 35%;
     top: 3245px;
 }
-
-
-.Contact h2 {
-    font-size: 40px;
-    font-weight: bolder;
-    color: rgb(46, 133, 89);
-    text-align: center;
-}
-
-.Contact .form {
-    font-size: 20px;
-    font-family: 'Gsans' sans-serif;
-    color: wheat;
-    justify-content: center;
-}
-
-.Contact textarea {
-    border-width: 2px;
-    border-color: wheat;
-}
-
 
 footer {
     font-size: 12px;
@@ -325,10 +308,10 @@ footer {
     margin: -10px;
     padding-left: 30px;
     padding-right: 30px;
-}
 
-footer a {
-    color: wheat;
+    a {
+        color: wheat;
+    }
 }
 
 @media (max-width: 768px) {
@@ -351,11 +334,7 @@ footer a {
         grid-template-rows: auto auto auto auto;
         gap: 0px 0px;
         grid-auto-flow: row;
-        grid-template-areas:
-            "sobreMi sobreMi"
-            "info estudio"
-            "lenguajes estudio"
-            "skills idiomas";
+        grid-template-areas: "sobreMi sobreMi" "info estudio" "lenguajes estudio" "skills idiomas";
         padding: 60px;
         text-align: center;
         position: relative;
@@ -374,13 +353,11 @@ footer a {
         backdrop-filter: brightness(60%);
         border-top-left-radius: 15px;
         padding: 20px;
+
+        ul {
+            text-align: left;
+        }
     }
-
-    .info ul {
-        text-align: left;
-    }
-
-
 
     .idiomas {
         grid-area: idiomas;
@@ -396,22 +373,20 @@ footer a {
         padding-right: 50px;
         padding-top: 20px;
         text-align: center;
-    }
 
-
-
-    .estudio dt {
-        margin-bottom: 10px;
+        dt {
+            margin-bottom: 10px;
+        }
     }
 
     .lenguajes {
         grid-area: lenguajes;
         backdrop-filter: brightness(60%);
         padding: 20px;
-    }
 
-    .lenguajes ul {
-        text-align: left;
+        ul {
+            text-align: left;
+        }
     }
 
     .skills {
@@ -419,20 +394,21 @@ footer a {
         backdrop-filter: brightness(60%);
         border-bottom-left-radius: 15px;
         padding: 20px;
+
+        ul {
+            text-align: left;
+        }
     }
 
-    .skills ul {
-        text-align: left;
-    }
-
-
-    .Services article {
-        text-align: center;
-        padding: auto;
-        display: grid;
-        grid-gap: 80px;
-        grid-auto-flow: row;
-        grid-auto-columns: 1fr;
+    .Services {
+        article {
+            text-align: center;
+            padding: auto;
+            display: grid;
+            grid-gap: 80px;
+            grid-auto-flow: row;
+            grid-auto-columns: 1fr;
+        }
     }
 
     .Contact2 {
@@ -440,17 +416,17 @@ footer a {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr;
         gap: 0px 0px;
-        grid-template-areas:
-            "title title"
-            "form icons";
+        grid-template-areas: "title title" "form icons";
         padding-bottom: 60px;
         padding-left: 0px;
         text-align: center;
     }
 
-    .Contact h2 {
-        padding: 20px;
-        margin: 30px;
+    .Contact {
+        h2 {
+            padding: 20px;
+            margin: 30px;
+        }
     }
 
     .map {
@@ -459,7 +435,6 @@ footer a {
 }
 
 @media (max-width: 414px) {
-
     header {
         height: auto;
     }
@@ -470,13 +445,7 @@ footer a {
         grid-template-rows: auto auto auto auto auto auto auto;
         gap: 10px 10px;
         grid-auto-flow: row;
-        grid-template-areas:
-            "SobreMi"
-            "info"
-            "estudio"
-            "lenguajes"
-            "skills"
-            "idiomas";
+        grid-template-areas: "SobreMi" "info" "estudio" "lenguajes" "skills" "idiomas";
         padding: 30px;
         text-align: center;
         position: relative;
@@ -495,10 +464,10 @@ footer a {
         backdrop-filter: brightness(60%);
         padding: 20px;
         border-top-right-radius: 15px;
-    }
 
-    .info ul {
-        text-align: left;
+        ul {
+            text-align: left;
+        }
     }
 
     .idiomas {
@@ -521,10 +490,10 @@ footer a {
         grid-area: lenguajes;
         backdrop-filter: brightness(60%);
         padding: 20px;
-    }
 
-    .lenguajes ul {
-        text-align: left;
+        ul {
+            text-align: left;
+        }
     }
 
     .skills {
@@ -532,50 +501,50 @@ footer a {
         backdrop-filter: brightness(60%);
         padding: 20px;
         border-bottom-left-radius: 0px;
-    }
 
-    .skills ul {
-        text-align: left;
+        ul {
+            text-align: left;
+        }
     }
 
     .Services {
         padding: 70px;
         background-image: url(Otros/v1020-22b.jpg);
         height: auto;
-    }
 
-    .Services div {
-        border-radius: 15px;
-        backdrop-filter: brightness(60%);
-        padding: 30px;
-        transition-duration: .5s;
-    }
+        div {
+            border-radius: 15px;
+            backdrop-filter: brightness(60%);
+            padding: 30px;
+            transition-duration: .5s;
 
-    .Services div:hover {
-        transform: scale(1.2, 1.2);
-        transition-duration: .5s;
-    }
+            &:hover {
+                transform: scale(1.2, 1.2);
+                transition-duration: .5s;
+            }
 
-    .Services h2 {
-        text-align: center;
-        font-size: 50px;
-    }
+            p {
+                font-weight: bold;
+            }
+        }
 
-    .Services h3 {
-        font-size: 30px;
-    }
+        h2 {
+            text-align: center;
+            font-size: 50px;
+        }
 
-    .Services div p {
-        font-weight: bold;
-    }
+        h3 {
+            font-size: 30px;
+        }
 
-    .Services article {
-        text-align: center;
-        display: grid;
-        grid-auto-flow: row;
-        grid-auto-columns: 1fr;
-        margin: 0px;
-        padding: 0px;
+        article {
+            text-align: center;
+            display: grid;
+            grid-auto-flow: row;
+            grid-auto-columns: 1fr;
+            margin: 0px;
+            padding: 0px;
+        }
     }
 
     .Contact2 {
@@ -583,48 +552,45 @@ footer a {
         grid-template-columns: 300px;
         grid-template-rows: auto auto auto;
         gap: 20px 0px;
-        grid-template-areas:
-            "title"
-            "form"
-            "icons";
+        grid-template-areas: "title" "form" "icons";
         padding-left: 0px;
         text-align: center;
     }
 
-    .Contact h2 {
-        padding: 20px;
-        margin: 30px;
+    .Contact {
+        h2 {
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .icons {
+            padding: 20px;
+            display: grid;
+            grid-auto-flow: column;
+            max-width: 300px;
+
+            span {
+                padding: 20px;
+                max-width: 30px;
+                font-weight: bold;
+            }
+        }
+
+        .form {
+            max-width: 300px;
+        }
     }
 
     .map {
         display: none;
     }
 
-    .Contact .icons {
-        padding: 20px;
+    .Icons {
         display: grid;
         grid-auto-flow: column;
-        max-width: 300px;
 
+        div {
+            max-width: 80px;
+        }
     }
-
-    .Contact .icons span {
-        padding: 20px;
-        max-width: 30px;
-        font-weight: bold;
-    }
-
-    .Contact .form {
-        max-width: 300px;
-    }
-
-    .icons {
-        display: grid;
-        grid-auto-flow: column;
-    }
-
-    .Icons div {
-        max-width: 80px;
-    }
-
 }
