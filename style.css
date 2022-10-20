@@ -24,21 +24,8 @@
     border-radius: 50%;
 }
 
-#blob {
-    position: absolute;
-    left: 0px;
-    top: -50px;
-    display: none;
-}
-
 html {
     box-sizing: border-box;
-}
-
-html,
-body {
-    height: 100%;
-
 }
 
 body {
@@ -425,7 +412,6 @@ footer a {
         text-align: left;
     }
 
-
     .Services article {
         text-align: center;
         padding: auto;
@@ -433,6 +419,10 @@ footer a {
         grid-gap: 80px;
         grid-auto-flow: row;
         grid-auto-columns: 1fr;
+    }
+
+    .Services h2 {
+        margin-bottom: 40px;
     }
 
     .Contact2 {
@@ -580,7 +570,7 @@ footer a {
 
     .Contact2 {
         display: grid;
-        grid-template-columns: 300px;
+        grid-template-columns: 414;
         grid-template-rows: auto auto auto;
         gap: 20px 0px;
         grid-template-areas:
@@ -616,15 +606,18 @@ footer a {
 
     .Contact .form {
         max-width: 300px;
+        margin-bottom: 40px;
     }
 
-    .icons {
+    .Icons {
         display: grid;
         grid-auto-flow: column;
     }
 
     .Icons div {
         max-width: 80px;
+        margin: 0px;
+        justify-content: center;
     }
 
 }
