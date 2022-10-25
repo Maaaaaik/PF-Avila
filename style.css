@@ -1,17 +1,46 @@
 @font-face {
-    font-family: 'Gsans';
-    src: url(Otros/Fonts/ProductSansRegular.ttf) format(truetype);
+    font-family: 'product_sansbold_italic';
+    src: url('Otros/fonts/product_sans_bold_italic-webfont.woff2') format('woff2'),
+        url('Otros/fonts/product_sans_bold_italic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'product_sansbold';
+    src: url('Otros/fonts/product_sans_bold-webfont.woff2') format('woff2'),
+        url('Otros/fonts/product_sans_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'product_sansitalic';
+    src: url('Otros/fonts/product_sans_italic-webfont.woff2') format('woff2'),
+        url('Otros/fonts/product_sans_italic-webfont.woff') format('woff');
     font-weight: normal;
+    font-style: italic;
+
 }
 
-@font-face {
-    font-family: 'GsansI';
-    src: url(Otros/Fonts/ProductSansItalic.ttf) format(truetype);
-}
+
+
 
 @font-face {
-    font-family: 'GsansB';
-    src: url(Otros/Fonts/ProductSansBold.ttf) format(truetype);
+    font-family: 'product_sansregular';
+    src: url('Otros/fonts/product_sans_regular-webfont.woff2') format('woff2'),
+        url('Otros/fonts/product_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 #mike {
@@ -29,11 +58,13 @@
     top: -10px;
     right: -10px;
     max-height: 500px;
+    opacity: 80%;
 
 }
 
+
 body {
-    font-family: "Gsans", sans-serif;
+    font-family: 'product_sansregular', sans-serif;
     color: wheat;
     background-image: url(Otros/v1020-60.jpg);
     background-repeat: repeat;
@@ -56,12 +87,14 @@ header {
 }
 
 .h1 {
+
     padding: 50px;
     text-align: center;
     z-index: 100;
 }
 
 .h1 h1 {
+    font-family: 'product_sansregular', sans-serif;
     font-weight: bold;
 }
 
@@ -118,6 +151,7 @@ header {
     padding: 20px;
     padding-top: 40px;
     padding-left: 40px;
+    z-index: 100;
 }
 
 .info ul {
@@ -133,6 +167,7 @@ header {
     padding: 20px;
     padding-bottom: 40px;
     padding-right: 40px;
+    z-index: 100;
 }
 
 .estudio {
@@ -143,6 +178,7 @@ header {
     padding-top: 40px;
     padding-right: 40px;
     text-align: center;
+    z-index: 100;
 }
 
 
@@ -156,6 +192,7 @@ header {
     backdrop-filter: brightness(60%);
     padding: 20px;
     padding-left: 40px;
+    z-index: 100;
 }
 
 .lenguajes ul {
@@ -169,17 +206,24 @@ header {
     padding: 20px;
     padding-left: 40px;
     padding-bottom: 40px;
+    z-index: 100;
 }
 
 .skills ul {
     text-align: left;
 }
 
+#contra3 {
+    position: absolute;
+    top: 1270px;
+    right: -10px;
+    opacity: 100%;
+}
+
 .Services {
     padding: 70px;
-    padding-top: 20px;
     background-image: url(Otros/v1020-22b.jpg);
-    height: auto;
+    height: 700px;
     margin-right: -10px;
     margin-left: -10px;
 }
@@ -189,6 +233,7 @@ header {
     backdrop-filter: brightness(60%);
     padding: 30px;
     transition-duration: .5s;
+    z-index: 100;
 }
 
 .Services div:hover {
@@ -200,6 +245,8 @@ header {
     text-align: center;
     font-size: 50px;
     padding: 40px;
+    z-index: 100;
+    position: relative;
 }
 
 .Services h3 {
@@ -216,6 +263,7 @@ header {
     grid-gap: 80px;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+    margin-top: 60px;
 }
 
 .Clients h2 {
@@ -223,6 +271,9 @@ header {
     text-align: center;
     font-size: 40px;
     padding: 60px;
+    margin: 20px;
+    z-index: auto;
+    position: relative;
 }
 
 .Clients #tarjeta {
@@ -231,6 +282,7 @@ header {
 
 .Clients #card {
     margin: 0px;
+    z-index: 100;
 }
 
 #card {
@@ -240,6 +292,13 @@ header {
 #card:hover {
     transform: scale(1.2, 1.2);
 
+}
+
+#contra2 {
+    position: absolute;
+    top: 1970px;
+    right: -10px;
+    opacity: 100%;
 }
 
 .Contact2 {
@@ -285,6 +344,13 @@ header {
     z-index: 1;
 }
 
+#contra4 {
+    position: absolute;
+    top: 3250px;
+    right: -10px;
+    opacity: 100%;
+}
+
 .Contact {
     padding: 40px;
     background-image: url(Otros/v1020-28b.jpg);
@@ -293,19 +359,13 @@ header {
     margin-left: -10px;
 }
 
-#blob2 {
-    position: absolute;
-    rotate: 270deg;
-    left: 35%;
-    top: 3245px;
-}
-
-
 .Contact h2 {
     font-size: 40px;
     font-weight: bolder;
-    color: rgb(46, 133, 89);
+    color: wheat;
     text-align: center;
+    position: relative;
+    z-index: 100;
 }
 
 .Contact .form {
