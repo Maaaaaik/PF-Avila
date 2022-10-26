@@ -494,6 +494,10 @@ footer a {
         text-align: left;
     }
 
+    .Services {
+        height: auto;
+    }
+
     .Services article {
         text-align: center;
         padding: auto;
@@ -528,9 +532,21 @@ footer a {
     .map {
         display: none;
     }
+
+    #contra2,
+    #contra3,
+    #contra4 {
+        display: none;
+    }
 }
 
 @media (max-width: 414px) {
+
+    #contra2,
+    #contra3,
+    #contra4 {
+        display: none;
+    }
 
     header {
         height: auto;
